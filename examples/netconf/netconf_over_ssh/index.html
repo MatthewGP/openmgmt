@@ -9,14 +9,13 @@
         <meta name="description" content="Arista Open Management repository documentation">
       
       
-      
         <meta name="author" content="Arista Networks">
       
       
         <link rel="canonical" href="https://aristanetworks.github.io/openmgmt/examples/netconf/netconf_over_ssh/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
@@ -24,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
           
           
@@ -41,23 +40,21 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-
   
 
 
   
-
   
 
 
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-4V8W728SS9"),document.addEventListener("DOMContentLoaded",function(){"undefined"!=typeof location$&&location$.subscribe(function(t){gtag("config","G-4V8W728SS9",{page_path:t.pathname})})})</script>
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-4V8W728SS9"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-4V8W728SS9",{page_path:e.pathname})})})</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4V8W728SS9"></script>
 
 
@@ -74,7 +71,6 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -91,7 +87,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Open Management" class="md-header__button md-logo" aria-label="Open Management" data-md-component="logo">
       
@@ -124,8 +123,7 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -157,8 +155,7 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/aristanetworks/openmgmt/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/aristanetworks/openmgmt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -170,11 +167,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -200,8 +200,7 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/aristanetworks/openmgmt/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/aristanetworks/openmgmt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -242,10 +241,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_2">
-        Configuration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Configuration" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -254,6 +257,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -264,8 +268,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -276,8 +282,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -288,8 +296,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -300,8 +310,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -312,6 +324,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -334,10 +347,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
-      <label class="md-nav__link" for="__nav_3">
-        Examples
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Examples" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
@@ -346,6 +363,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -356,8 +374,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -367,10 +387,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
       
-      <label class="md-nav__link" for="__nav_3_2">
-        gNMI clients
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          gNMI clients
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="gNMI clients" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
@@ -379,6 +403,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -389,8 +414,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -401,14 +428,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -419,8 +449,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -430,10 +462,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
-      <label class="md-nav__link" for="__nav_3_4">
-        gNOI
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          gNOI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="gNOI" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
@@ -442,6 +478,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -452,8 +489,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -464,8 +503,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -476,14 +517,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -494,8 +538,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -507,10 +553,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" checked>
       
-      <label class="md-nav__link" for="__nav_3_6">
-        NETCONF
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          NETCONF
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="NETCONF" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
@@ -519,6 +569,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -529,8 +580,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -541,8 +594,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -564,6 +619,7 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -703,8 +759,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-the-candidate-configuration" class="md-nav__link">
-    Edit the candidate configuration
+  <a href="#edit-the-candidate-configuration-edit-interface-description" class="md-nav__link">
+    Edit the candidate configuration - edit interface description
   </a>
   
 </li>
@@ -724,8 +780,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-the-candidate-configuration_1" class="md-nav__link">
-    Edit the candidate configuration
+  <a href="#edit-the-candidate-configuration-set-hostname" class="md-nav__link">
+    Edit the candidate configuration - set hostname
   </a>
   
 </li>
@@ -763,14 +819,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -781,8 +840,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -793,8 +854,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -805,8 +868,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -816,10 +881,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10" type="checkbox" id="__nav_3_10" >
       
-      <label class="md-nav__link" for="__nav_3_10">
-        RESTCONF
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10">
+          RESTCONF
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="RESTCONF" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_10">
           <span class="md-nav__icon md-icon"></span>
@@ -828,6 +897,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -838,8 +908,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -850,8 +922,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -862,14 +936,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -880,6 +957,21 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WiFi/" class="md-nav__link">
+        WiFi
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -900,10 +992,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        Telemetry
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Telemetry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Telemetry" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -912,6 +1008,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -922,8 +1019,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -934,6 +1033,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -956,6 +1056,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../videos/" class="md-nav__link">
+        Videos
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -968,6 +1083,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1107,8 +1223,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-the-candidate-configuration" class="md-nav__link">
-    Edit the candidate configuration
+  <a href="#edit-the-candidate-configuration-edit-interface-description" class="md-nav__link">
+    Edit the candidate configuration - edit interface description
   </a>
   
 </li>
@@ -1128,8 +1244,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-the-candidate-configuration_1" class="md-nav__link">
-    Edit the candidate configuration
+  <a href="#edit-the-candidate-configuration-set-hostname" class="md-nav__link">
+    Edit the candidate configuration - set hostname
   </a>
   
 </li>
@@ -1172,14 +1288,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/aristanetworks/openmgmt/edit/master/docs/examples/netconf/netconf_over_ssh.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  <h1>NETCONF over SSH</h1>
-                
-                <h2 id="requirements-on-the-eos-device">Requirements on the EOS device</h2>
+<a href="https://github.com/aristanetworks/openmgmt/edit/master/docs/examples/netconf/netconf_over_ssh.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+  <h1>NETCONF over SSH</h1>
+
+<h2 id="requirements-on-the-eos-device">Requirements on the EOS device</h2>
 <pre><code class="language-shell">switch1#show running-config section netconf
 management api netconf
    transport ssh test
@@ -1211,7 +1327,7 @@ Server:             running on port 830, in MGMT VRF
 <h3 id="advertise-the-client-capabilities">Advertise the client capabilities</h3>
 <p>Once the NETCONF session is open, the NETCONF server (EOS device) advertises its capabilities.</p>
 <p>You must advertise the client capabilities. Example:</p>
-<pre><code class="language-shell">&lt;hello xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;&gt;
+<pre><code class="language-xml">&lt;hello xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;&gt;
     &lt;capabilities&gt;
         &lt;capability&gt;urn:ietf:params:netconf:base:1.0&lt;/capability&gt;
         &lt;capability&gt;urn:ietf:params:netconf:capability:candidate:1.0&lt;/capability&gt;
@@ -1223,14 +1339,14 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="get-all-configuration-and-state-data">Get all configuration and state data</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;1&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;1&quot;&gt;
   &lt;get&gt;
   &lt;/get&gt;
 &lt;/rpc&gt;
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="get-the-operational-status-of-an-interface">Get the operational status of an Interface</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;2&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;2&quot;&gt;
   &lt;get&gt;
     &lt;filter type=&quot;subtree&quot;&gt;
         &lt;interfaces&gt;
@@ -1248,7 +1364,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="get-the-whole-running-configuration">Get the whole running configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;3&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;3&quot;&gt;
   &lt;get-config&gt;
     &lt;source&gt;
         &lt;running/&gt;
@@ -1258,7 +1374,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="get-the-running-configuration-of-an-interface">Get the running configuration of an interface</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;4&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;4&quot;&gt;
   &lt;get-config&gt;
     &lt;source&gt;
         &lt;running/&gt;
@@ -1275,7 +1391,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="get-the-interface-description-from-the-running-configuration">Get the interface description from the running configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;5&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;5&quot;&gt;
   &lt;get-config&gt;
     &lt;source&gt;
         &lt;running/&gt;
@@ -1296,7 +1412,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="lock-the-running-configuration">Lock the running configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;6&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;6&quot;&gt;
   &lt;lock&gt;
     &lt;target&gt;
       &lt;running/&gt;
@@ -1306,7 +1422,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="edit-the-running-configuration-using-eos-native-data-model">Edit the running configuration using EOS native data model</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;7&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;7&quot;&gt;
 &lt;edit-config&gt;
     &lt;target&gt;
       &lt;running/&gt;
@@ -1324,7 +1440,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="edit-the-running-configuration-using-openconfig-data-model">Edit the running configuration using OpenConfig data model</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;8&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;8&quot;&gt;
 &lt;edit-config&gt;
     &lt;target&gt;
         &lt;running/&gt;
@@ -1345,7 +1461,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="edit-the-running-configuration-to-delete-an-existing-existing-data">Edit the running configuration to delete an existing existing data</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;9&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;9&quot;&gt;
 &lt;edit-config&gt;
     &lt;target&gt;
         &lt;running/&gt;
@@ -1367,7 +1483,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="unlock-the-running-configuration">Unlock the running configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;10&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;10&quot;&gt;
   &lt;unlock&gt;
     &lt;target&gt;
       &lt;running/&gt;
@@ -1377,7 +1493,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="save-running-configuration-on-the-flash">Save running configuration on the flash</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;11&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;11&quot;&gt;
   &lt;copy-config&gt;
     &lt;target&gt;
       &lt;url&gt;
@@ -1392,7 +1508,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="copy-the-running-configuration-datastore-to-the-startup-configuration-datastore">Copy the running configuration datastore to the startup configuration datastore</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;12&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;12&quot;&gt;
     &lt;copy-config&gt;
         &lt;target&gt;
             &lt;startup/&gt;
@@ -1405,7 +1521,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="lock-the-candidate-configuration">Lock the candidate configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;13&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;13&quot;&gt;
   &lt;lock&gt;
     &lt;target&gt;
       &lt;candidate/&gt;
@@ -1414,8 +1530,8 @@ Server:             running on port 830, in MGMT VRF
 &lt;/rpc&gt;
 ]]&gt;]]&gt;
 </code></pre>
-<h3 id="edit-the-candidate-configuration">Edit the candidate configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;14&quot;&gt;
+<h3 id="edit-the-candidate-configuration-edit-interface-description">Edit the candidate configuration - edit interface description</h3>
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;14&quot;&gt;
 &lt;edit-config&gt;
     &lt;target&gt;
         &lt;candidate/&gt;
@@ -1436,13 +1552,13 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="commit-the-configuration-change-from-the-candidate-to-the-running-configuration">Commit the configuration change (from the candidate to the running configuration)</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;15&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;15&quot;&gt;
     &lt;commit/&gt;
 &lt;/rpc&gt;
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="unlock-the-candidate-configuration">Unlock the candidate configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;20&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;20&quot;&gt;
   &lt;unlock&gt;
     &lt;target&gt;
       &lt;candidate/&gt;
@@ -1451,8 +1567,8 @@ Server:             running on port 830, in MGMT VRF
 &lt;/rpc&gt;
 ]]&gt;]]&gt;
 </code></pre>
-<h3 id="edit-the-candidate-configuration_1">Edit the candidate configuration</h3>
-<pre><code>&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;21&quot;&gt;
+<h3 id="edit-the-candidate-configuration-set-hostname">Edit the candidate configuration - set hostname</h3>
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;21&quot;&gt;
 &lt;edit-config&gt;
     &lt;target&gt;
         &lt;candidate/&gt;
@@ -1470,7 +1586,7 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="get-part-of-the-candidate-configuration">Get part of the candidate configuration</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;5&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;5&quot;&gt;
   &lt;get-config&gt;
     &lt;source&gt;
         &lt;candidate/&gt;
@@ -1487,24 +1603,20 @@ Server:             running on port 830, in MGMT VRF
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="revert-the-candidate-configuration-to-the-current-running-configuration">Revert the candidate configuration to the current running configuration</h3>
-<p>If you decide to not commit the candidate configuration, you can revert the candidate configuration to the current running configuration</p>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;90&quot;&gt;
+<p>If you decide to not commit the candidate configuration, you can revert the candidate configuration to the current
+running configuration</p>
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;90&quot;&gt;
   &lt;discard-changes/&gt;
 &lt;/rpc&gt;
 ]]&gt;]]&gt;
 </code></pre>
 <h3 id="close-the-session">Close the session</h3>
-<pre><code class="language-shell">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;100&quot;&gt;
+<pre><code class="language-xml">&lt;rpc xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; message-id=&quot;100&quot;&gt;
     &lt;close-session&gt;
     &lt;/close-session&gt;
 &lt;/rpc&gt;
 ]]&gt;]]&gt;
 </code></pre>
-                
-              
-              
-                
-
 
               
             </article>
@@ -1513,8 +1625,7 @@ Server:             running on port 830, in MGMT VRF
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
@@ -1553,14 +1664,15 @@ Server:             running on port 830, in MGMT VRF
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -1570,10 +1682,10 @@ Server:             running on port 830, in MGMT VRF
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
       
     
   </body>

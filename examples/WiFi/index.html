@@ -12,21 +12,21 @@
         <meta name="author" content="Arista Networks">
       
       
-        <link rel="canonical" href="https://aristanetworks.github.io/openmgmt/examples/restconf/curl/">
+        <link rel="canonical" href="https://aristanetworks.github.io/openmgmt/examples/WiFi/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
-        <title>RESTCONF with cURL - Open Management</title>
+        <title>WiFi - Open Management</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cd566b2a.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
           
           
@@ -44,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requirement-on-the-restconf-client" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Open Management" class="md-header__button md-logo" aria-label="Open Management" data-md-component="logo">
+    <a href="../.." title="Open Management" class="md-header__button md-logo" aria-label="Open Management" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RESTCONF with cURL
+              WiFi
             
           </span>
         </div>
@@ -190,7 +190,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Open Management" class="md-nav__button md-logo" aria-label="Open Management" data-md-component="logo">
+    <a href="../.." title="Open Management" class="md-nav__button md-logo" aria-label="Open Management" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -221,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -262,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../configuration/openconfig/" class="md-nav__link">
+      <a href="../../configuration/openconfig/" class="md-nav__link">
         OpenConfig
       </a>
     </li>
@@ -276,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../configuration/netconf/" class="md-nav__link">
+      <a href="../../configuration/netconf/" class="md-nav__link">
         NETCONF
       </a>
     </li>
@@ -290,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../configuration/restconf/" class="md-nav__link">
+      <a href="../../configuration/restconf/" class="md-nav__link">
         RESTCONF
       </a>
     </li>
@@ -304,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../configuration/mtls/" class="md-nav__link">
+      <a href="../../configuration/mtls/" class="md-nav__link">
         Certificate Authentication
       </a>
     </li>
@@ -318,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../configuration/security/" class="md-nav__link">
+      <a href="../../configuration/security/" class="md-nav__link">
         Security Configuration
       </a>
     </li>
@@ -368,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ansible/" class="md-nav__link">
+      <a href="../ansible/" class="md-nav__link">
         Ansible
       </a>
     </li>
@@ -408,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gnmi-clients/arista-gnmi/" class="md-nav__link">
+      <a href="../gnmi-clients/arista-gnmi/" class="md-nav__link">
         gnmi (Arista)
       </a>
     </li>
@@ -422,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gnmi-clients/gnmic/" class="md-nav__link">
+      <a href="../gnmi-clients/gnmic/" class="md-nav__link">
         gnmic
       </a>
     </li>
@@ -443,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gnmi-gateway/" class="md-nav__link">
+      <a href="../gnmi-gateway/" class="md-nav__link">
         gNMI gateway
       </a>
     </li>
@@ -483,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gnoi/" class="md-nav__link">
+      <a href="../gnoi/" class="md-nav__link">
         About gNOI
       </a>
     </li>
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gnoi/gnoic/" class="md-nav__link">
+      <a href="../gnoi/gnoic/" class="md-nav__link">
         gNOIc
       </a>
     </li>
@@ -511,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gnoi/grpcurl/" class="md-nav__link">
+      <a href="../gnoi/grpcurl/" class="md-nav__link">
         gRPCurl
       </a>
     </li>
@@ -532,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../golang/" class="md-nav__link">
+      <a href="../golang/" class="md-nav__link">
         Go Lang
       </a>
     </li>
@@ -572,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../netconf/" class="md-nav__link">
+      <a href="../netconf/" class="md-nav__link">
         About NETCONF
       </a>
     </li>
@@ -586,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../netconf/ncclient/" class="md-nav__link">
+      <a href="../netconf/ncclient/" class="md-nav__link">
         ncclient
       </a>
     </li>
@@ -600,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../netconf/netconf_over_ssh/" class="md-nav__link">
+      <a href="../netconf/netconf_over_ssh/" class="md-nav__link">
         NETCONF over SSH
       </a>
     </li>
@@ -621,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pygnmi/" class="md-nav__link">
+      <a href="../pygnmi/" class="md-nav__link">
         Pygnmi
       </a>
     </li>
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pyang/" class="md-nav__link">
+      <a href="../pyang/" class="md-nav__link">
         Pyang
       </a>
     </li>
@@ -649,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pyangbind/" class="md-nav__link">
+      <a href="../pyangbind/" class="md-nav__link">
         Pyangbind
       </a>
     </li>
@@ -661,14 +661,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10" type="checkbox" id="__nav_3_10" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_10" type="checkbox" id="__nav_3_10" >
       
       
       
@@ -691,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../restconf/" class="md-nav__link">
         About RESTCONF
       </a>
     </li>
@@ -703,129 +701,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          cURL
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../restconf/curl/" class="md-nav__link">
         cURL
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirement-on-the-restconf-client" class="md-nav__link">
-    Requirement on the RESTCONF client
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#restconf-examples-using-curl" class="md-nav__link">
-    RESTCONF examples using cURL
-  </a>
-  
-    <nav class="md-nav" aria-label="RESTCONF examples using cURL">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get" class="md-nav__link">
-    GET
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#head" class="md-nav__link">
-    HEAD
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#put" class="md-nav__link">
-    PUT
-  </a>
-  
-    <nav class="md-nav" aria-label="PUT">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface-configuration-example" class="md-nav__link">
-    Interface configuration example
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#device-hostname-example" class="md-nav__link">
-    Device hostname example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post" class="md-nav__link">
-    POST
-  </a>
-  
-    <nav class="md-nav" aria-label="POST">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface-configuration-example_1" class="md-nav__link">
-    Interface configuration example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete" class="md-nav__link">
-    DELETE
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -837,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../restconf/python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -858,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ygot/" class="md-nav__link">
+      <a href="../ygot/" class="md-nav__link">
         ygot
       </a>
     </li>
@@ -870,11 +750,103 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../WiFi/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          WiFi
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         WiFi
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-ap" class="md-nav__link">
+    Get AP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-operating-frequencies-bands-of-ssid" class="md-nav__link">
+    Get operating frequencies (bands) of SSID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-ssid-configuration" class="md-nav__link">
+    Get SSID Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-clients-for-ssid" class="md-nav__link">
+    Get clients for SSID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-operating-channel-of-radio" class="md-nav__link">
+    Get operating channel of radio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-operating-eirp-of-radio" class="md-nav__link">
+    Get operating EIRP of radio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-operating-channel-of-radio" class="md-nav__link">
+    Set operating channel of radio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -920,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../telemetry/adapters/gnmireverse/" class="md-nav__link">
+      <a href="../../telemetry/adapters/gnmireverse/" class="md-nav__link">
         gNMIReverse
       </a>
     </li>
@@ -934,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../telemetry/adapters/ocprometheus/" class="md-nav__link">
+      <a href="../../telemetry/adapters/ocprometheus/" class="md-nav__link">
         ocprometheus
       </a>
     </li>
@@ -956,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../models/" class="md-nav__link">
+      <a href="../../models/" class="md-nav__link">
         Models
       </a>
     </li>
@@ -971,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../videos/" class="md-nav__link">
+      <a href="../../videos/" class="md-nav__link">
         Videos
       </a>
     </li>
@@ -1003,84 +975,58 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirement-on-the-restconf-client" class="md-nav__link">
-    Requirement on the RESTCONF client
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#restconf-examples-using-curl" class="md-nav__link">
-    RESTCONF examples using cURL
-  </a>
-  
-    <nav class="md-nav" aria-label="RESTCONF examples using cURL">
+    <nav class="md-nav" aria-label="Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#get" class="md-nav__link">
-    GET
+  <a href="#get-ap" class="md-nav__link">
+    Get AP
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#head" class="md-nav__link">
-    HEAD
+  <a href="#get-operating-frequencies-bands-of-ssid" class="md-nav__link">
+    Get operating frequencies (bands) of SSID
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#put" class="md-nav__link">
-    PUT
-  </a>
-  
-    <nav class="md-nav" aria-label="PUT">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface-configuration-example" class="md-nav__link">
-    Interface configuration example
+  <a href="#get-ssid-configuration" class="md-nav__link">
+    Get SSID Configuration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#device-hostname-example" class="md-nav__link">
-    Device hostname example
+  <a href="#get-clients-for-ssid" class="md-nav__link">
+    Get clients for SSID
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#post" class="md-nav__link">
-    POST
-  </a>
-  
-    <nav class="md-nav" aria-label="POST">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface-configuration-example_1" class="md-nav__link">
-    Interface configuration example
+  <a href="#get-operating-channel-of-radio" class="md-nav__link">
+    Get operating channel of radio
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#get-operating-eirp-of-radio" class="md-nav__link">
+    Get operating EIRP of radio
+  </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete" class="md-nav__link">
-    DELETE
+  <a href="#set-operating-channel-of-radio" class="md-nav__link">
+    Set operating channel of radio
   </a>
   
 </li>
@@ -1102,202 +1048,336 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/aristanetworks/openmgmt/edit/master/docs/examples/restconf/curl.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/aristanetworks/openmgmt/edit/master/docs/examples/WiFi/index.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>cURL</h1>
+  <h1>WiFi</h1>
 
-<h2 id="requirement-on-the-restconf-client">Requirement on the RESTCONF client</h2>
-<pre><code class="language-shell">sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get install curl jq -y
+<h2 id="overview">Overview</h2>
+<p>Arista APs include an agent module (ocagent) that implements the OpenConfig
+interfaces. The agent module interacts with the rest of the AP modules for
+applying changes, fetching data, etc. For mor information on OpenConfig
+implementation in Arista WiFi,
+see <a href="https://wifihelp.arista.com/post/
+openconfig-for-arista-wifi?term=openconfig&amp;page=1">OpenConfig for Arista WiFi.</a></p>
+<p>This page lists a few examples of the AP using gNMI. For more information on gNxI, refer to <a href="https://github.com/google/gnxi">gNxI Tools.</a></p>
+<h3 id="get-ap">Get AP</h3>
+<pre><code class="language-shell">python py_gnmicli.py -m
+get -t &lt;AP-IP&gt; -x /provision-aps -user &lt;username&gt; -pass &lt;password&gt; -p &lt;port&gt; -g -o openconfig.mojonetworks.com
 </code></pre>
-<h2 id="restconf-examples-using-curl">RESTCONF examples using cURL</h2>
-<h3 id="get">GET</h3>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet1/config/description' \
-      --header 'Accept: application/yang-data+json' -u arista:arista  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-interfaces:description&quot;:&quot;P2P_LINK_TO_DC1-SPINE1_Ethernet1&quot;}
-</code></pre>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet1' \
-      --header 'Accept: application/yang-data+json' -u arista:arista  \
-      --insecure | jq .'&quot;openconfig-interfaces:state&quot;.counters.&quot;in-octets&quot;'
-</code></pre>
-<p>output</p>
-<pre><code class="language-text">&quot;48284395&quot;
-</code></pre>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces' \
-     --header 'Accept: application/yang-data+json' -u arista:arista \
-     --insecure | jq .'&quot;openconfig-interfaces:interface&quot;[2].name'
-</code></pre>
-<p>output</p>
-<pre><code class="language-text">&quot;Ethernet1&quot;
-</code></pre>
-<pre><code class="language-shell">curl -X GET https://10.73.1.105:6020/restconf/data/system \
-    --header 'Accept: application/yang-data+json' -u arista:arista \
-    --insecure | jq .'&quot;openconfig-system:config&quot;.hostname'
-</code></pre>
-<p>output</p>
-<pre><code class="language-text">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 66151    0 66151    0     0   284k      0 --:--:-- --:--:-- --:--:--  284k
-&quot;switch1&quot;
-</code></pre>
-<h3 id="head">HEAD</h3>
-<pre><code class="language-shell">curl --head 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet1' \
-    --header 'Accept: application/yang-data+json' -u arista:arista  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-shell">HTTP/1.1 200 OK
-Content-Type: application/yang.data+json
-Date: Sun, 04 Jul 2021 14:20:39 GMT
-</code></pre>
-<h3 id="put">PUT</h3>
-<h4 id="interface-configuration-example">Interface configuration example</h4>
-<p>Let's check before the change</p>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4/config' \
-   --header 'Accept: application/yang-data+json' -u arista:arista  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-interfaces:description&quot;:&quot;blabla&quot;,&quot;openconfig-interfaces:enabled&quot;:false,&quot;arista-intf-augments:load-interval&quot;:300,&quot;openconfig-interfaces:loopback-mode&quot;:false,&quot;openconfig-interfaces:mtu&quot;:0,&quot;openconfig-interfaces:name&quot;:&quot;Ethernet4&quot;,&quot;openconfig-vlan:tpid&quot;:&quot;openconfig-vlan-types:TPID_0X8100&quot;,&quot;openconfig-interfaces:type&quot;:&quot;iana-if-type:ethernetCsmacd&quot;}
-</code></pre>
-<p>Let's use the file <a href="https://github.com/aristanetworks/openmgmt/tree/main/src/restconf/interface.json">interface.json</a></p>
-<pre><code class="language-shell">more interface.json
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;enabled&quot;:true,&quot;name&quot;:&quot;Ethernet4&quot;, &quot;description&quot;:&quot;restconf_test&quot;}
-</code></pre>
-<pre><code class="language-shell">curl -X PUT https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4/config \
-   -H 'Content-Type: application/json' -u arista:arista -d @interface.json  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-interfaces:description&quot;:&quot;restconf_test&quot;,&quot;openconfig-interfaces:enabled&quot;:true,&quot;openconfig-interfaces:name&quot;:&quot;Ethernet4&quot;}
-</code></pre>
-<p>Let's verify after the change</p>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4/config' \
-   --header 'Accept: application/yang-data+json' -u arista:arista  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-interfaces:description&quot;:&quot;restconf_test&quot;,&quot;openconfig-interfaces:enabled&quot;:true,&quot;arista-intf-augments:load-interval&quot;:300,&quot;openconfig-interfaces:loopback-mode&quot;:false,&quot;openconfig-interfaces:mtu&quot;:0,&quot;openconfig-interfaces:name&quot;:&quot;Ethernet4&quot;,&quot;openconfig-vlan:tpid&quot;:&quot;openconfig-vlan-types:TPID_0X8100&quot;,&quot;openconfig-interfaces:type&quot;:&quot;iana-if-type:ethernetCsmacd&quot;}
-</code></pre>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4/config' \
-   --header 'Accept: application/yang-data+json' -u arista:arista  --insecure | jq .
-</code></pre>
-<p>output</p>
+<details><summary>Reveal output</summary>
+<p>
+
+
 <pre><code class="language-javascript">{
-  &quot;openconfig-interfaces:description&quot;: &quot;restconf_test&quot;,
-  &quot;openconfig-interfaces:enabled&quot;: true,
-  &quot;arista-intf-augments:load-interval&quot;: 300,
-  &quot;openconfig-interfaces:loopback-mode&quot;: false,
-  &quot;openconfig-interfaces:mtu&quot;: 0,
-  &quot;openconfig-interfaces:name&quot;: &quot;Ethernet4&quot;,
-  &quot;openconfig-vlan:tpid&quot;: &quot;openconfig-vlan-types:TPID_0X8100&quot;,
-  &quot;openconfig-interfaces:type&quot;: &quot;iana-if-type:ethernetCsmacd&quot;
+  &quot;openconfig-ap-manager:provision-ap&quot;: [
+    {
+      &quot;mac&quot;: &quot;30:86:2D:B0:0F:EF&quot;,
+      &quot;config&quot;: {
+        &quot;country-code&quot;: &quot;IN&quot;,
+        &quot;hostname&quot;: &quot;arista&quot;
+      },
+      &quot;state&quot;: {
+        &quot;country-code&quot;: &quot;IN&quot;,
+        &quot;hostname&quot;: &quot;arista&quot;
+      }
+    }
+  ]
 }
 </code></pre>
-<h4 id="device-hostname-example">Device hostname example</h4>
-<p>Let's check before the change</p>
-<pre><code class="language-shell">curl -X GET https://10.73.1.105:6020/restconf/data/system/config \
-   --header 'Accept: application/yang-data+json' -u arista:arista  --insecure
+
+
+</p>
+</details>
+
+<h3 id="get-operating-frequencies-bands-of-ssid">Get operating frequencies (bands) of SSID</h3>
+<pre><code class="language-shell">python py_gnmicli.py -m
+get -t &lt;AP-IP&gt;  -user &lt;username&gt; -pass &lt;password&gt; -p &lt;port&gt; -g -o openconfig.mojonetworks.com -x access-points/access-point[hostname=&lt;host&gt;]/ssids/ssid[name=&lt;ssid-name&gt;]/state/operating-frequency
 </code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-system:hostname&quot;:&quot;DC1-LEAF1A&quot;}
+<details><summary>Reveal output</summary>
+<p>
+
+
+<pre><code class="language-javascript">FREQ_2_5_GHZ
 </code></pre>
-<pre><code class="language-shell">curl -X GET https://10.73.1.105:6020/restconf/data/system \
-   --header 'Accept: application/yang-data+json' -u arista:arista \
-   --insecure | jq .'&quot;openconfig-system:config&quot;.hostname'
+
+
+</p>
+</details>
+
+<h3 id="get-ssid-configuration">Get SSID Configuration</h3>
+<pre><code class="language-shell">python py_gnmicli.py -m
+get -t &lt;AP-IP&gt;  -user &lt;username&gt; -pass &lt;password&gt; -p &lt;port&gt; -g -o openconfig.mojonetworks.com -x access-points/access-point[hostname=&lt;host&gt;]/ssids/ssid[name=&lt;ssid-name&gt;]/config
 </code></pre>
-<p>output</p>
-<pre><code class="language-text">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 74748    0 74748    0     0   300k      0 --:--:-- --:--:-- --:--:--  300k
-&quot;DC1-LEAF1A&quot;
-</code></pre>
-<pre><code class="language-shell">curl -X PUT https://10.73.1.105:6020/restconf/data/system/config \
-      -H 'Content-Type: application/json' -u arista:arista \
-      -d '{&quot;openconfig-system:hostname&quot;:&quot;test&quot;}'  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-system:hostname&quot;:&quot;test&quot;}
-</code></pre>
-<p>Let's verify after the change</p>
-<pre><code class="language-shell">curl -X GET https://10.73.1.105:6020/restconf/data/system/config \
-      --header 'Accept: application/yang-data+json' -u arista:arista  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-system:hostname&quot;:&quot;test&quot;}
-</code></pre>
-<h3 id="post">POST</h3>
-<h4 id="interface-configuration-example_1">Interface configuration example</h4>
-<p>Let's check before the change</p>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4' \
-   --header 'Accept: application/yang-data+json' -u arista:arista \
-   --insecure | jq .'&quot;openconfig-interfaces:config&quot;'
-</code></pre>
-<p>output</p>
+<details><summary>Reveal output</summary>
+<p>
+
+
 <pre><code class="language-javascript">{
-  &quot;description&quot;: &quot;&quot;,
-  &quot;enabled&quot;: true,
-  &quot;arista-intf-augments:load-interval&quot;: 300,
-  &quot;loopback-mode&quot;: false,
-  &quot;mtu&quot;: 0,
-  &quot;name&quot;: &quot;Ethernet4&quot;,
-  &quot;openconfig-vlan:tpid&quot;: &quot;openconfig-vlan-types:TPID_0X8100&quot;,
-  &quot;type&quot;: &quot;iana-if-type:ethernetCsmacd&quot;
+  &quot;openconfig-access-points:dva&quot;: true,
+  &quot;openconfig-access-points:supported-data-rates-5g&quot;: [
+    &quot;openconfig-wifi-types:RATE_11MB&quot;,
+    &quot;openconfig-wifi-types:RATE_12MB&quot;,
+    &quot;openconfig-wifi-types:RATE_18MB&quot;,
+    &quot;openconfig-wifi-types:RATE_24MB&quot;,
+    &quot;openconfig-wifi-types:RATE_36MB&quot;,
+    &quot;openconfig-wifi-types:RATE_48MB&quot;,
+    &quot;openconfig-wifi-types:RATE_54MB&quot;
+  ],
+  &quot;openconfig-access-points:opmode&quot;: &quot;WPA2_PERSONAL&quot;,
+  &quot;openconfig-access-points:okc&quot;: true,
+  &quot;openconfig-access-points:supported-data-rates-2g&quot;: [
+    &quot;openconfig-wifi-types:RATE_11MB&quot;,
+    &quot;openconfig-wifi-types:RATE_12MB&quot;,
+    &quot;openconfig-wifi-types:RATE_18MB&quot;,
+    &quot;openconfig-wifi-types:RATE_24MB&quot;,
+    &quot;openconfig-wifi-types:RATE_36MB&quot;,
+    &quot;openconfig-wifi-types:RATE_48MB&quot;,
+    &quot;openconfig-wifi-types:RATE_54MB&quot;
+  ],
+  &quot;openconfig-access-points:name&quot;: &quot;OCWiFi1&quot;,
+  &quot;openconfig-access-points:basic-data-rates-2g&quot;: [
+    &quot;openconfig-wifi-types:RATE_11MB&quot;,
+    &quot;openconfig-wifi-types:RATE_12MB&quot;,
+    &quot;openconfig-wifi-types:RATE_18MB&quot;,
+    &quot;openconfig-wifi-types:RATE_24MB&quot;,
+    &quot;openconfig-wifi-types:RATE_36MB&quot;,
+    &quot;openconfig-wifi-types:RATE_48MB&quot;,
+    &quot;openconfig-wifi-types:RATE_54MB&quot;
+  ],
+  &quot;openconfig-access-points:wpa2-psk&quot;: &quot;0123456789&quot;,
+  &quot;openconfig-access-points:basic-data-rates-5g&quot;: [
+    &quot;openconfig-wifi-types:RATE_11MB&quot;,
+    &quot;openconfig-wifi-types:RATE_12MB&quot;,
+    &quot;openconfig-wifi-types:RATE_18MB&quot;,
+    &quot;openconfig-wifi-types:RATE_24MB&quot;,
+    &quot;openconfig-wifi-types:RATE_36MB&quot;,
+    &quot;openconfig-wifi-types:RATE_48MB&quot;,
+    &quot;openconfig-wifi-types:RATE_54MB&quot;
+  ]
+}
+
+</code></pre>
+
+
+</p>
+</details>
+
+<h3 id="get-clients-for-ssid">Get clients for SSID</h3>
+<pre><code class="language-shell">python py_gnmicli.py -m
+get -t &lt;AP-IP&gt;  -user &lt;username&gt; -pass &lt;password&gt; -p &lt;port&gt; -g -o openconfig.mojonetworks.com -x access-points/access-point[hostname=&lt;host&gt;]/ssids/ssid[name=&lt;ssid-name&gt;]/clients
+</code></pre>
+<details><summary>Reveal output</summary>
+<p>
+
+
+<pre><code class="language-javascript">{
+  &quot;openconfig-access-points:client&quot;: [
+    {
+      &quot;mac&quot;: &quot;C2:2F:42:79:CB:BA&quot;,
+      &quot;client-rf&quot;: {
+        &quot;state&quot;: {
+          &quot;phy-rate&quot;: 0,
+          &quot;rssi&quot;: -52,
+          &quot;frequency&quot;: 0,
+          &quot;snr&quot;: 42,
+          &quot;ss&quot;: 0
+        }
+      },
+      &quot;state&quot;: {
+        &quot;mac&quot;: &quot;C2:2F:42:79:CB:BA&quot;,
+        &quot;counters&quot;: {
+          &quot;tx-bytes&quot;: &quot;34707&quot;,
+          &quot;tx-retries&quot;: &quot;0&quot;,
+          &quot;rx-bytes&quot;: &quot;19705&quot;,
+          &quot;rx-retries&quot;: &quot;18&quot;
+        }
+      },
+      &quot;client-connection&quot;: {
+        &quot;state&quot;: {
+          &quot;username&quot;: &quot;&quot;,
+          &quot;client-state&quot;: &quot;openconfig-wifi-types:AUTHENTICATED&quot;,
+          &quot;hostname&quot;: &quot;&quot;,
+          &quot;operating-system&quot;: &quot;&quot;,
+          &quot;ipv6-addresses&quot;: [
+            &quot;fe80::c02f:42ff:fe79:cbba&quot;
+          ],
+          &quot;ipv4-address&quot;: [
+            &quot;192.168.29.250&quot;
+          ],
+          &quot;connection-time&quot;: &quot;1628849487411018113&quot;
+        }
+      }
+    }
+  ]
+}
+
+</code></pre>
+
+
+</p>
+</details>
+
+<h3 id="get-operating-channel-of-radio">Get operating channel of radio</h3>
+<pre><code class="language-shell">python py_gnmicli.py -m
+get -t &lt;AP-IP&gt;  -user &lt;username&gt; -pass &lt;password&gt; -p &lt;port&gt; -g -o openconfig.mojonetworks.com -x access-points/access-point[hostname=&lt;host&gt;]/radios/radio[id=1][operating-frequency=FREQ_5GHZ]/state/channel
+</code></pre>
+<details><summary>Reveal output</summary>
+<p>
+
+
+<pre><code class="language-javascript">{
+  timestamp: 1628855017049472718
+  update {
+    path {
+      elem {
+        name: &quot;access-points&quot;
+      }
+      elem {
+        name: &quot;access-point&quot;
+        key {
+          key: &quot;hostname&quot;
+          value: &quot;arista&quot;
+        }
+      }
+      elem {
+        name: &quot;radios&quot;
+      }
+      elem {
+        name: &quot;radio&quot;
+        key {
+          key: &quot;id&quot;
+          value: &quot;1&quot;
+        }
+        key {
+          key: &quot;operating-frequency&quot;
+          value: &quot;FREQ_5GHZ&quot;
+        }
+      }
+      elem {
+        name: &quot;state&quot;
+      }
+      elem {
+        name: &quot;channel&quot;
+      }
+    }
+    val {
+      uint_val: 36
+    }
+  }
+}
+
+</code></pre>
+
+
+</p>
+</details>
+
+<h3 id="get-operating-eirp-of-radio">Get operating EIRP of radio</h3>
+<pre><code class="language-shell">python py_gnmicli.py -m
+get -t &lt;AP-IP&gt;  -user &lt;username&gt; -pass &lt;password&gt; -p &lt;port&gt; -g -o openconfig.mojonetworks.com -x access-points/access-point[hostname=&lt;host&gt;]/radios/radio[id=1][operating-frequency=FREQ_5GHZ]/state/transmit-eirp
+</code></pre>
+<details><summary>Reveal output</summary>
+<p>
+
+
+<pre><code class="language-javascript">{
+  timestamp: 1628855017049472718
+  update {
+    path {
+      elem {
+        name: &quot;access-points&quot;
+      }
+      elem {
+        name: &quot;access-point&quot;
+        key {
+          key: &quot;hostname&quot;
+          value: &quot;arista&quot;
+        }
+      }
+      elem {
+        name: &quot;radios&quot;
+      }
+      elem {
+        name: &quot;radio&quot;
+        key {
+          key: &quot;id&quot;
+          value: &quot;1&quot;
+        }
+        key {
+          key: &quot;operating-frequency&quot;
+          value: &quot;FREQ_5GHZ&quot;
+        }
+      }
+      elem {
+        name: &quot;state&quot;
+      }
+      elem {
+        name: &quot;transmit-eirp&quot;
+      }
+    }
+    val {
+      uint_val: 28
+    }
+  }
 }
 </code></pre>
-<pre><code class="language-shell">curl -X POST https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4/config \
-   -H 'Content-Type: application/json' -u arista:arista \
-   -d '{&quot;openconfig-interfaces:description&quot;:&quot;restconf_test&quot;}' --insecure
+
+
+</p>
+</details>
+
+<h3 id="set-operating-channel-of-radio">Set operating channel of radio</h3>
+<pre><code class="language-shell">python py_gnmicli.py -m
+set-replace-t &lt;AP-IP&gt;  -user &lt;username&gt; -pass &lt;password&gt; -p &lt;port&gt; -g -o openconfig.mojonetworks.com -x access-points/access-point[hostname=&lt;host&gt;]/radios/radio[id=1][operating-frequency=FREQ_5GHZ]/config/channel -val 169
 </code></pre>
-<p>output</p>
-<pre><code class="language-shell">{&quot;openconfig-interfaces:description&quot;:&quot;restconf_test&quot;}
-</code></pre>
-<pre><code class="language-shell">curl -X POST https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4/config \
-    -H 'Content-Type: application/json' -u arista:arista \
-    -d '{&quot;openconfig-interfaces:enabled&quot;:false}'  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-shell">{&quot;openconfig-interfaces:enabled&quot;:false}
-</code></pre>
-<p>Let's verify after the change</p>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4' \
-   --header 'Accept: application/yang-data+json' -u arista:arista \
-   --insecure | jq .'&quot;openconfig-interfaces:config&quot;.description'
-</code></pre>
-<p>output</p>
-<pre><code class="language-text">&quot;restconf_test&quot;
-</code></pre>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet4' \
-   --header 'Accept: application/yang-data+json' \
-   -u arista:arista  --insecure | jq .'&quot;openconfig-interfaces:config&quot;'
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{
-  &quot;description&quot;: &quot;restconf_test&quot;,
-  &quot;enabled&quot;: false,
-  &quot;arista-intf-augments:load-interval&quot;: 300,
-  &quot;loopback-mode&quot;: false,
-  &quot;mtu&quot;: 0,
-  &quot;name&quot;: &quot;Ethernet4&quot;,
-  &quot;openconfig-vlan:tpid&quot;: &quot;openconfig-vlan-types:TPID_0X8100&quot;,
-  &quot;type&quot;: &quot;iana-if-type:ethernetCsmacd&quot;
+<details><summary>Reveal output</summary>
+<p>
+
+
+<pre><code class="language-javascript">response {
+  path {
+    elem {
+      name: &quot;access-points&quot;
+    }
+    elem {
+      name: &quot;access-point&quot;
+      key {
+        key: &quot;hostname&quot;
+        value: &quot;arista&quot;
+      }
+    }
+    elem {
+      name: &quot;radios&quot;
+    }
+    elem {
+      name: &quot;radio&quot;
+      key {
+        key: &quot;id&quot;
+        value: &quot;1&quot;
+      }
+      key {
+        key: &quot;operating-frequency&quot;
+        value: &quot;FREQ_5GHZ&quot;
+      }
+    }
+    elem {
+      name: &quot;config&quot;
+    }
+    elem {
+      name: &quot;channel&quot;
+    }
+  }
+  op: REPLACE
 }
+
 </code></pre>
-<h3 id="delete">DELETE</h3>
-<p>Let's check before the change</p>
-<pre><code class="language-shell">curl -s GET 'https://10.73.1.105:6020/restconf/data/ietf-interfaces:interfaces/interface=Loopback100' \
-      --header 'Accept: application/yang-data+json' -u arista:arista  --insecure
-</code></pre>
-<p>output</p>
-<pre><code class="language-javascript">{&quot;openconfig-interfaces:config&quot;:{&quot;description&quot;:&quot;test&quot;,&quot;enabled&quot;:true,&quot;arista-intf-augments:load-interval&quot;:300,&quot;loopback-mode&quot;:true,&quot;name&quot;:&quot;Loopback100&quot;,&quot;openconfig-vlan:tpid&quot;:&quot;openconfig-vlan-types:TPID_0X8100&quot;,&quot;type&quot;:&quot;iana-if-type:softwareLoopback&quot;},&quot;openconfig-interfaces:hold-time&quot;:{&quot;config&quot;:{&quot;down&quot;:0,&quot;up&quot;:0},&quot;state&quot;:{&quot;down&quot;:0,&quot;up&quot;:0}},&quot;openconfig-interfaces:name&quot;:&quot;Loopback100&quot;,&quot;openconfig-interfaces:state&quot;:{&quot;enabled&quot;:true,&quot;loopback-mode&quot;:false,&quot;openconfig-vlan:tpid&quot;:&quot;openconfig-vlan-types:TPID_0X8100&quot;},&quot;openconfig-interfaces:subinterfaces&quot;:{&quot;subinterface&quot;:[{&quot;config&quot;:{&quot;description&quot;:&quot;test&quot;,&quot;enabled&quot;:true,&quot;index&quot;:0},&quot;index&quot;:0,&quot;openconfig-if-ip:ipv4&quot;:{&quot;config&quot;:{&quot;dhcp-client&quot;:false,&quot;enabled&quot;:true,&quot;mtu&quot;:1500},&quot;state&quot;:{&quot;dhcp-client&quot;:false,&quot;enabled&quot;:true,&quot;mtu&quot;:1500}},&quot;openconfig-if-ip:ipv6&quot;:{&quot;config&quot;:{&quot;dhcp-client&quot;:false,&quot;enabled&quot;:false,&quot;mtu&quot;:1500},&quot;state&quot;:{&quot;dhcp-client&quot;:false,&quot;enabled&quot;:false,&quot;mtu&quot;:1500}},&quot;state&quot;:{&quot;enabled&quot;:true,&quot;index&quot;:0}}]}}
-</code></pre>
-<pre><code class="language-shell">curl -X DELETE https://10.73.1.105:6020/restconf/data/ietf-interfaces:interfaces/interface=Loopback100 \
-    -u arista:arista  --insecure
-</code></pre>
+
+
+</p>
+</details>
 
               
             </article>
@@ -1311,7 +1391,7 @@ Date: Sun, 04 Jul 2021 14:20:39 GMT
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: About RESTCONF" rel="prev">
+        <a href="../ygot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ygot" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1320,20 +1400,20 @@ Date: Sun, 04 Jul 2021 14:20:39 GMT
               <span class="md-footer__direction">
                 Previous
               </span>
-              About RESTCONF
+              ygot
             </div>
           </div>
         </a>
       
       
         
-        <a href="../python/" class="md-footer__link md-footer__link--next" aria-label="Next: Python" rel="next">
+        <a href="../../telemetry/adapters/gnmireverse/" class="md-footer__link md-footer__link--next" aria-label="Next: gNMIReverse" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Python
+              gNMIReverse
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1363,10 +1443,10 @@ Date: Sun, 04 Jul 2021 14:20:39 GMT
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.01de222e.min.js"></script>
       
     
   </body>
